@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "718352862349",
+    "firebase_url": "https://therealdeal-28572.firebaseio.com",
+    "project_id": "therealdeal-28572",
+    "storage_bucket": "therealdeal-28572.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718352862349:android:4acee941624e2d3742e6c4",
+        "android_client_info": {
+          "package_name": "com.example.test1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718352862349-l53p34rcb2957tl19qm6kr8btvuho07h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCABIM3XB18SUHWiUsmBab_29pgKI8bPSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718352862349-l53p34rcb2957tl19qm6kr8btvuho07h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718352862349:android:b9ee7eab6b3fe1e942e6c4",
+        "android_client_info": {
+          "package_name": "com.example.therealdeal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718352862349-3stcbe8jq7iqocg9a03lg2ie8oabh3c2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.therealdeal",
+            "certificate_hash": "d01625bd735b53c3c29a8f067aff4b40a9870b18"
+          }
+        },
+        {
+          "client_id": "718352862349-l53p34rcb2957tl19qm6kr8btvuho07h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCABIM3XB18SUHWiUsmBab_29pgKI8bPSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718352862349-l53p34rcb2957tl19qm6kr8btvuho07h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
