@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/trdlogoround"
         android:label="TheRealDeals"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/trdlogoround"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".sign_up"></activity>
