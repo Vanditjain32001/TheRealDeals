@@ -13,6 +13,8 @@ public class MainActivity2 extends AppCompatActivity {
 
     private FirebaseAuth data;
     private Button logout;
+    private Button buy_button;
+    private Button sell_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,25 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         data=FirebaseAuth.getInstance();
+
+        buy_button=(Button)findViewById(R.id.button_buy);
+        sell_button=(Button)findViewById(R.id.btn_sell);
+
+        buy_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent activity_buy = new Intent(MainActivity2.this,Buy.class);
+                startActivity(activity_buy);
+            }
+        });
+
+        sell_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent activity_sell=new Intent(MainActivity2.this,Sell.class);
+                startActivity(activity_sell);
+            }
+        });
 
         logout=(Button)findViewById(R.id.btnLogOut);
         logout.setOnClickListener(new View.OnClickListener() {
