@@ -4,16 +4,208 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sell">
+    tools:context=".Sell"
+    android:background="@drawable/sellbgg">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Selling  Page"
-        android:textSize="40dp"
+    <EditText
+        android:id="@+id/spprice"
+        android:layout_width="202dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@android:color/transparent"
+        android:hint="Price"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.369" />
+
+    <EditText
+        android:id="@+id/spsur"
+        android:layout_width="206dp"
+        android:layout_height="44dp"
+        android:hint="Surrounding type"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:backgroundTint="@android:color/transparent"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.691" />
+
+    <EditText
+        android:id="@+id/spstatus"
+        android:layout_width="108dp"
+        android:layout_height="42dp"
+        android:backgroundTint="@android:color/transparent"
+        android:hint="Status"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617" />
+
+    <EditText
+        android:id="@+id/spfurn"
+        android:layout_width="157dp"
+        android:layout_height="47dp"
+        android:backgroundTint="@android:color/transparent"
+        android:hint="Furnishing"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614" />
+
+    <EditText
+        android:id="@+id/sppark"
+        android:layout_width="109dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@android:color/transparent"
+        android:hint="Parking"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.527" />
+
+    <EditText
+        android:id="@+id/sppos"
+        android:layout_width="140dp"
+        android:layout_height="57dp"
+        android:backgroundTint="@android:color/transparent"
+        android:hint="Possession by"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531" />
+
+    <EditText
+        android:id="@+id/sploc"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@android:color/transparent"
+        android:hint="Location"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <EditText
+        android:id="@+id/sptype"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@android:color/transparent"
+        android:hint="Type"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <EditText
+        android:id="@+id/sparea"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@android:color/transparent"
+        android:hint="Area"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.527" />
+
+    <EditText
+        android:id="@+id/spdesc"
+        android:layout_width="337dp"
+        android:layout_height="116dp"
+        android:hint="Description"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="22dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.869" />
+
+    <EditText
+        android:id="@+id/spbhk"
+        android:layout_width="89dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@android:color/transparent"
+        android:hint="BHK"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418" />
+
+    <CheckBox
+        android:id="@+id/sprent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For Rent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474" />
+
+    <Button
+        android:id="@+id/Button_spsubmit"
+        android:layout_width="190dp"
+        android:layout_height="43dp"
+        android:background="@drawable/submit_button"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.966" />
 </androidx.constraintlayout.widget.ConstraintLayout>
