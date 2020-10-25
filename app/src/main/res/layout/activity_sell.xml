@@ -195,10 +195,11 @@
         app:layout_constraintVertical_bias="0.474" />
 
     <Button
-        android:id="@+id/Button_spsubmit"
+        android:id="@+id/submit_sell"
         android:layout_width="190dp"
         android:layout_height="43dp"
         android:background="@drawable/submit_button"
+        android:onClick="process"
         android:text="Submit"
         android:textAllCaps="false"
         android:textSize="25sp"

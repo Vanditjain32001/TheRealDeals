@@ -37,8 +37,8 @@ public class MainActivity2 extends AppCompatActivity {
         sell_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent activity_sell=new Intent(MainActivity2.this,Sell.class);
-                startActivity(activity_sell);
+                Intent activity_sell_profile=new Intent(MainActivity2.this,profile.class);
+                startActivity(activity_sell_profile);
             }
         });
 

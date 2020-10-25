@@ -60,7 +60,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent=new Intent(MainActivity.this,sign_up.class);
                 startActivity(intent);
             }
-        });
+        }
+        );
 
     }
     private void login(String useremail,String userpassword)
