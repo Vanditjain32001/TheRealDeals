@@ -29,7 +29,7 @@ public class MainActivity2 extends AppCompatActivity {
         buy_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent activity_buy = new Intent(MainActivity2.this,Buy.class);
+                Intent activity_buy = new Intent(MainActivity2.this, Buy.class);
                 startActivity(activity_buy);
             }
         });

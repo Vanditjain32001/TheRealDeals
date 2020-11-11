@@ -1,13 +1,11 @@
 package com.example.test1;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -61,7 +59,7 @@ public class Sell extends AppCompatActivity {
 
         property_data obj=new property_data(area,price, bhk, type, loc, pos, park, fur, status, sur, des);
         FirebaseDatabase data=FirebaseDatabase.getInstance();
-        DatabaseReference node=data.getReference("mail_ID");
+        DatabaseReference node=data.getReference("Email_ID");
         node.child(String.valueOf((counter+1))).setValue(obj);
 
         sparea.setText("");

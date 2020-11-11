@@ -1,12 +1,9 @@
 package com.example.test1;
 
-import android.widget.EditText;
-
 public class property_data {
     String area,price,bhk,type,loc,pos,park,fur,status,sur,des;
 
-
-    public property_data(String area, String price, String bhk, String type, String loc, String pos, String park, String fur, String status, String sur, String des) {
+    public property_data(String area, String price, String bhk, String type, String loc, String pos, String park, String fur, String status, String sur, String des){
         this.area = area;
         this.price = price;
         this.bhk = bhk;
@@ -20,6 +17,7 @@ public class property_data {
         this.des = des;
     }
 
+
     public String getArea() {
         return area;
     }
@@ -28,7 +26,7 @@ public class property_data {
         this.area = area;
     }
 
-    public String getPrice() {
+    public static String getPrice() {
         return price;
     }
 
@@ -36,11 +34,11 @@ public class property_data {
         this.price = price;
     }
 
-    public String getBhk() {
+    public static String getBhk() {
         return bhk;
     }
 
-    public void setBhk(String bhk) {
+    public void setBhk(String BHK) {
         this.bhk = bhk;
     }
 
@@ -60,9 +58,7 @@ public class property_data {
         this.loc = loc;
     }
 
-    public String getPos() {
-        return pos;
-    }
+    public String getPos() { return pos; }
 
     public void setPos(String pos) {
         this.pos = pos;
