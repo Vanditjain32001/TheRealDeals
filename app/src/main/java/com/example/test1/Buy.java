@@ -62,26 +62,26 @@ public class Buy extends AppCompatActivity {
 
         Query firebaseSearchQuery = mRef.orderByChild("search").startAt(query).endAt(query + "\uf8ff");
 
-        FirebaseRecyclerAdapter<property_data, RecyclerView.ViewHolder> firebaseRecyclerAdapter =
-                new FirebaseRecyclerAdapter<property_data, RecyclerView.ViewHolder>(
+        FirebaseRecyclerAdapter<property_data, ViewHolder> firebaseRecyclerAdapter =
+                new FirebaseRecyclerAdapter<property_data, ViewHolder>(
                         property_data.class,
                         R.layout.row,
-                        RecyclerView.ViewHolder.class,
+                        ViewHolder.class,
                         firebaseSearchQuery
                 ) {
 
 
                     @Override
-                    protected void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position, @NonNull property_data model) {
+                    protected void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull property_data model) {
                         holder.setDetails(getApplicationContext(), model.getPrice(), model.getBhk(), model.getImage() );
                     }
 
                     @Override
-                    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+                    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-                        RecyclerView.ViewHolder holder = super.createViewHolder(parent, viewType);
+                        ViewHolder holder = super.createViewHolder(parent, viewType);
 
-                        holder.setOnClickListener(new RecyclerView.ViewHolder.ClickListener() {
+                        holder.setOnClickListener(new ViewHolder.ClickListener() {
                             @Override
                             public void onItemClick(View view, int position) {
                                 //Views
@@ -128,24 +128,24 @@ public class Buy extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         FirebaseRecyclerAdapter<property_data, RecyclerView.ViewHolder> firebaseRecyclerAdapter =
-                new FirebaseRecyclerAdapter<property_data, RecyclerView.ViewHolder>(
+                new FirebaseRecyclerAdapter<property_data, ViewHolder>(
                         property_data.class,
                         R.layout.row,
-                        RecyclerView.ViewHolder.class,
+                        ViewHolder.class,
                         mRef
                 ) {
                     @Override
-                    protected void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position, @NonNull property_data model) {
+                    protected void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull property_data model) {
                         holder.setDetails(getApplicationContext(), model.getPrice(), model.getBhk(), model.getImage() );
                     }
 
 
                     @Override
-                    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+                    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-                        RecyclerView.ViewHolder holder = super.createViewHolder(parent, viewType);
+                        ViewHolder holder = super.createViewHolder(parent, viewType);
 
-                        holder.setOnClickListener(new RecyclerView.ViewHolder.ClickListener() {
+                        holder.setOnClickListener(new ViewHolder.ClickListener() {
                             @Override
                             public void onItemClick(View view, int position) {
                                 //Views
