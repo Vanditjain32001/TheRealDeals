@@ -21,8 +21,7 @@
         app:layout_constraintHorizontal_bias="0.129"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.369"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.369" />
 
     <EditText
         android:id="@+id/spsur"
@@ -210,4 +209,51 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.966" />
+
+    <Button
+        android:id="@+id/spchoose"
+        android:layout_width="55dp"
+        android:layout_height="21dp"
+        android:background="@drawable/submit_button"
+        android:text="Browse"
+        android:textSize="8dp"
+        android:onClick="choose"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <Button
+        android:id="@+id/spsend"
+        android:layout_width="55dp"
+        android:layout_height="21dp"
+        android:background="@drawable/submit_button"
+        android:text="Upload"
+        android:textSize="8dp"
+        android:onClick="send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <TextView
+        android:id="@+id/sptextview"
+        android:layout_width="297dp"
+        android:layout_height="57dp"
+        android:text="Please choose images"
+        android:textSize="20sp"
+        android:textAlignment="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272"
+        android:gravity="center_horizontal" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

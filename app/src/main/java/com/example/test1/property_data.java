@@ -26,7 +26,7 @@ public class property_data {
         this.area = area;
     }
 
-    public static String getPrice() {
+    public String getPrice() {
         return price;
     }
 
@@ -34,9 +34,10 @@ public class property_data {
         this.price = price;
     }
 
-    public static String getBhk() {
+    public String getBhk() {
         return bhk;
     }
+
 
     public void setBhk(String BHK) {
         this.bhk = bhk;

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:background="@drawable/bg"
     tools:context=".profile">
 
     <androidx.cardview.widget.CardView
@@ -12,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="80dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
         android:elevation="10dp"
@@ -77,15 +78,25 @@
 
     </androidx.cardview.widget.CardView>
 
-
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:fitsSystemWindows="true"
+        android:background="#94CED5"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_anchorGravity="center" />
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/plus"
-        android:layout_width="70dp"
-        android:layout_height="83dp"
-        android:background="#F6F5F5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:background="#FFFFFF"
         android:clickable="true"
-        app:backgroundTint="#0C373C"
-        app:srcCompat="@android:drawable/ic_menu_add"
-        android:focusable="true" />
+        android:src="@drawable/add"
+        app:fabCustomSize="64dp"
+        app:maxImageSize="64dp"
+        app:backgroundTint="#FFFFFF"
+        app:srcCompat="@android:drawable/ic_menu_add" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
