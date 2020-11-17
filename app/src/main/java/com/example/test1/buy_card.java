@@ -10,7 +10,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -38,14 +37,6 @@ public class buy_card extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buy_card);
-
-        //Action bar
-        ActionBar actionBar = getSupportActionBar();
-        //Actionbar title
-        actionBar.setTitle("TheRealDeals");
-        //set back button in action bar
-        actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setDisplayShowHomeEnabled(true);
 
         //initialize views
          Price = findViewById(R.id.price);
