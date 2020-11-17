@@ -1,11 +1,14 @@
 package com.example.test1;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AlertDialog;
 import androidx.core.view.MenuItemCompat;
 
 import android.view.Menu;
@@ -63,25 +66,25 @@ public class Buy extends AppCompatActivity {
         Query firebaseSearchQuery = mRef.orderByChild("search").startAt(query).endAt(query + "\uf8ff");
 
         FirebaseRecyclerAdapter<property_data, RecyclerView.ViewHolder> firebaseRecyclerAdapter =
-                new FirebaseRecyclerAdapter<property_data, RecyclerView.ViewHolder>(
+                new FirebaseRecyclerAdapter<property_data,ViewHolder>(
                         property_data.class,
                         R.layout.row,
-                        RecyclerView.ViewHolder.class,
+                        ViewHolder.class,
                         firebaseSearchQuery
                 ) {
 
 
                     @Override
-                    protected void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position, @NonNull property_data model) {
+                    protected void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull property_data model) {
                         holder.setDetails(getApplicationContext(), model.getPrice(), model.getBhk(), model.getImage() );
                     }
 
                     @Override
-                    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+                    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-                        RecyclerView.ViewHolder holder = super.createViewHolder(parent, viewType);
+                        ViewHolder holder = (ViewHolder) super.createViewHolder(parent, viewType);
 
-                        holder.setOnClickListener(new RecyclerView.ViewHolder.ClickListener() {
+                        holder.setOnClickListener(new ViewHolder.ClickListener() {
                             @Override
                             public void onItemClick(View view, int position) {
                                 //Views
@@ -128,24 +131,24 @@ public class Buy extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         FirebaseRecyclerAdapter<property_data, RecyclerView.ViewHolder> firebaseRecyclerAdapter =
-                new FirebaseRecyclerAdapter<property_data, RecyclerView.ViewHolder>(
+                new FirebaseRecyclerAdapter<property_data, ViewHolder>(
                         property_data.class,
                         R.layout.row,
-                        RecyclerView.ViewHolder.class,
+                        ViewHolder.class,
                         mRef
                 ) {
                     @Override
-                    protected void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position, @NonNull property_data model) {
+                    protected void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull property_data model) {
                         holder.setDetails(getApplicationContext(), model.getPrice(), model.getBhk(), model.getImage() );
                     }
 
 
                     @Override
-                    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+                    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-                        RecyclerView.ViewHolder holder = super.createViewHolder(parent, viewType);
+                        ViewHolder holder = super.createViewHolder(parent, viewType);
 
-                        holder.setOnClickListener(new RecyclerView.ViewHolder.ClickListener() {
+                        holder.setOnClickListener(new ViewHolder.ClickListener() {
                             @Override
                             public void onItemClick(View view, int position) {
                                 //Views
@@ -204,7 +207,7 @@ public class Buy extends AppCompatActivity {
         });
         return super.onCreateOptionsMenu(menu);
     }
-/*
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
@@ -225,7 +228,7 @@ public class Buy extends AppCompatActivity {
         //create alert dialog
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Sort by") //set title
-                .setIcon(R.drawable.ic_action_sort) //set icon
+                .setIcon(R.drawable.search) //set icon
                 .setItems(sortOptions, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -252,5 +255,5 @@ public class Buy extends AppCompatActivity {
                 });
         builder.show();
     }
-*/
+
 }
